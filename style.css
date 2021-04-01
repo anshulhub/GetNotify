@@ -1,6 +1,98 @@
-body{
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+ 
+html, body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
     background: #f4f7f5;
+    margin: 0px;
+    padding: 0px;
 }
-#hero{
-background-color: #00FF66;
+
+@media screen and (max-width: 875px) {
+	 .button-container {
+		 margin: 10px 10px !important;
+	}
+	 h2 {
+		 font-size: 15vw !important;
+	}
+}
+
+h1{
+    margin: auto;
+    padding: 15px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#nav{
+    background-color: #00FF66;
+    }
+
+.button-container {
+	 display: block;
+     float: right;
+	 cursor: pointer;
+	 -webkit-perspective: 1000;
+	 -ms-perspective: 1000;
+	 perspective: 1000;
+	 -webkit-transform-style: preserve-3d;
+	 -ms-transform-style: preserve-3d;
+	 transform-style: preserve-3d;
+	 position: relative;
+ }
+
+.button-container .button i.fa {
+	 font-size: 20px;
+	 margin: auto;
+	 text-shadow: 0.5px 1px 2px #3c3c3c;
+}
+
+.button-container{
+	 color: white;
+	 font-size: 15px;
+	 text-transform: uppercase;
+	 z-index: 11;
+}
+
+ .slider i {
+	 transition: all 0.3s ease-in-out;
+}
+ .slider i:before {
+	 transition: all 0.3s ease-in-out;
+}
+ .slider i:after {
+	 font-family: 'Lato', sans-serif;
+	 color: white;
+	 font-size: 15px;
+	 letter-spacing: 1px;
+	 text-shadow: none;
+	 content: 'Add note';
+	 position: absolute;
+	 opacity: 0;
+	 top: 2.5px;
+	 transition: all 0.3s ease-in-out;
+}
+
+ .button-slide-horizontal .button {
+     margin: 20px;
+	 background-image: linear-gradient(90deg, #97ec5f, #54ee8f);
+	 padding: 10px 10px;
+	 border-radius: 10px;
+}
+ .button-slide-horizontal i {
+	 position: relative;
+	 display: inline-block;
+	 transition: all 0.15s ease-in-out;
+}
+ .button-slide-horizontal i:before {
+	 transition: all 0.3s ease-in-out;
+}
+ .button-slide-horizontal:hover i {
+	 padding-right: 100px;
+}
+ .button-slide-horizontal:hover i:before {
+	 opacity: 0;
+}
+ .button-slide-horizontal:hover i:after {
+	 opacity: 1;
 }
