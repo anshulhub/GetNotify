@@ -1,11 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
- 
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 html, body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+	box-sizing: border-box;
     background: #f4f7f5;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (max-width: 875px) {
@@ -19,13 +21,17 @@ html, body {
 
 h1{
     margin: auto;
-    padding: 15px;
-    font-size: 30px;
+    padding: 10px;
+	font-family: 'Architects Daughter', cursive;
+    font-size: 35px;
     letter-spacing: 1px;
+	margin-left: 1em;
 }
 
 #nav{
-    background-color: #00FF66;
+    background-color: #fcd94f;
+	color: #272835;
+	font-weight: 400;
     }
 
 .button-container {
@@ -75,7 +81,7 @@ h1{
 
  .button-slide-horizontal .button {
      margin: 20px;
-	 background-image: linear-gradient(90deg, #97ec5f, #54ee8f);
+	 background-image: linear-gradient(90deg,#acbd15, #fcd94f );
 	 padding: 10px 10px;
 	 border-radius: 10px;
 }
@@ -95,4 +101,61 @@ h1{
 }
  .button-slide-horizontal:hover i:after {
 	 opacity: 1;
+}
+
+.note{
+	background-color: #fff;
+	margin: 35px 25px;
+	height: 200px;
+	width: 400px;
+	overflow: hidden;
+	overflow-y: scroll;
+	box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.1);
+}
+.note .modify{
+	display: flex;
+	justify-content: flex-end;
+	padding: 2px;
+}
+.modify{
+	margin: 5px;
+}
+.note textarea{
+	outline: none;
+	font-family: inherit;
+	font-size: 15px;
+	border: none;
+	height: 300px;
+	width: 100%;
+	padding: 20px;
+}
+button{
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 10px;
+}
+button:focus{
+	outline: none;
+}
+
+.fa-trash-alt,.fa-edit{
+	color: #fff;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #2ecf71;
+}
+.fa-trash-alt{
+	background-color: #e44837;
+}
+.fa-edit:hover{
+	background-color: #fff;
+	color: #2ecf71;
+	filter: drop-shadow(0px 10px 8px rgb(221, 219, 219));
+}
+.fa-trash-alt:hover{
+	background-color: #fff;
+	color: #e44837;
+	filter: drop-shadow(0px 10px 8px rgb(221, 219, 219));
 }
