@@ -1,52 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,300');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
 body {
 	font-family: 'Lato', sans-serif;
 	display: flex;
 	flex-wrap: wrap;
-	box-sizing: border-box;
     background: #f4f7f5;
-    margin: 0;
+	margin: 0;
     padding: 0;
-}
-h1{
-    margin: auto;
-    padding: 10px;
-	font-family: 'Architects Daughter', cursive;
-    font-size: 35px;
-    letter-spacing: 1px;
-	margin-left: 1em;
-}
+	box-sizing: border-box; }
+
 #nav{
 	position: sticky;
     background-color: #fcd94f;
 	color: #272835;
 	font-weight: 400;
-	width: 100vw;
-    }
+	width: 100vw;  }
+h1{
+	margin: auto;
+	padding: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 35px;
+	letter-spacing: 1px;
+	margin-left: 1em;	}
+
 .button-container {
 	 position: fixed;
 	 top: 4.8rem;
 	 right: 1rem;
 	 cursor: pointer;
-	 transform-style: preserve-3d;
- }
+	 transform-style: preserve-3d;  }
 .button-container .button i.fa {
 	 font-size: 20px;
 	 margin: auto;
-	 text-shadow: 0.5px 1px 2px #3c3c3c;
-}
+	 text-shadow: 0.5px 1px 2px #3c3c3c;   }
 .button-container{
 	 color: white;
-	 text-transform: uppercase;
-}
+	 text-transform: uppercase;  }
  .slider i {
-	 transition: all 0.3s ease-in-out;
-}
+	 transition: all 0.3s ease-in-out;	}
  .slider i:before {
-	 transition: all 0.3s ease-in-out;
-}
+	 transition: all 0.3s ease-in-out;	}
  .slider i:after {
 	 font-family: 'Lato', sans-serif;
 	 font-size: 15px;
@@ -56,31 +49,24 @@ h1{
 	 position: absolute;
 	 opacity: 0;
 	 top: 2.5px;
-	 transition: all 0.3s ease-in-out;
-}
+	 transition: all 0.3s ease-in-out;	}
  .button-slide-horizontal .button {
      margin: 20px;
 	 background-image: linear-gradient(90deg,#acbd15, #fcd94f );
 	 padding: 10px 10px;
-	 border-radius: 10px;
-}
+	 border-radius: 10px;	}
  .button-slide-horizontal i {
 	 position: relative;
 	 display: inline-block;
-	 transition: all 0.15s ease-in-out;
-}
+	 transition: all 0.15s ease-in-out;	}
  .button-slide-horizontal i:before {
-	 transition: all 0.3s ease-in-out;
-}
+	 transition: all 0.3s ease-in-out;	}
  .button-slide-horizontal:hover i {
-	 padding-right: 100px;
-}
+	 padding-right: 100px;	}
  .button-slide-horizontal:hover i:before {
-	 opacity: 0;
-}
+	 opacity: 0;	}
  .button-slide-horizontal:hover i:after {
-	 opacity: 1;
-}
+	 opacity: 1;	}
 
 .note{
 	background-color: #fff;
@@ -91,16 +77,13 @@ h1{
 	width: 310px;
 	overflow: hidden;
 	overflow-y: scroll;
-	box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.1);
-}
+	box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.1);	}
 .note .modify{
 	display: flex;
 	justify-content: flex-end;
-	padding: 2px;
-}
+	padding: 2px;	}
 .modify{
-	margin: 5px;
-}
+	margin: 5px;	}
 .note textarea{
 	outline: none;
 	font-family: inherit;
@@ -108,44 +91,34 @@ h1{
 	border: none;
 	height: 300px;
 	width: 100%;
-	padding: 0px 10px;
-}
+	padding-left: 10px;	}
 .save{
 	font-size: 14px;
 	overflow-wrap:break-word ;
-	padding: 0px 5px 0px 5px;
-}
+	padding: 10px;	}
 button{
 	background-color: transparent;
 	color: #fff;
 	border: none;
 	cursor: pointer;
-	font-size: 10px;
-}
+	font-size: 10px;	}
 button:focus{
-	outline: none;
-}
-
+	outline: none;	}
 .fa-trash-alt,.fa-edit{
 	color: #fff;
 	padding: 10px;
 	margin: 3px -3px;
 	border-radius: 50%;
-	background-color: #2ecf71;
-}
+	background-color: #2ecf71;	}
 .fa-trash-alt{
-	background-color: #e44837;
-}
+	background-color: #e44837;	}
 .fa-edit:hover{
 	background-color: #fff;
 	color: #2ecf71;
-	filter: drop-shadow(0px 10px 8px rgb(221, 219, 219));
-}
+	filter: drop-shadow(0px 10px 8px rgb(221, 219, 219));	}
 .fa-trash-alt:hover{
 	background-color: #fff;
 	color: #e44837;
-	filter: drop-shadow(0px 10px 8px rgb(221, 219, 219));
-}
+	filter: drop-shadow(0px 10px 8px rgb(221, 219, 219));	}
 .hidden{
-	display: none;
-}
+	display: none;	}
