@@ -1,0 +1,24 @@
+{
+  "name": "notify",
+  "version": "1.0.0",
+  "description": "Notes keeping app using local storage to remember notes when offline....",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshulhub/Notify.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anshulhub/Notify/issues"
+  },
+  "homepage": "https://github.com/anshulhub/Notify#readme",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}
